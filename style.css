@@ -76,21 +76,14 @@ button#donner {
 
 /*----------- OBJECTIFS ------------ */
 
-section#objectifs {
-  height: 70vh;
-}
-
-#objectif-items {
-  margin: 0 8rem;
-  column-count: 4;
-  column-gap: 7em;
-}
-
 #objectif-items p {
+  width: 80%;
+  margin: 0 auto;
   color: grey;
 }
 
 #objectif-items div {
+  margin-bottom: 5rem;
   text-align: center;
 }
 
@@ -140,7 +133,6 @@ section#objectifs {
 
 section#stats {
   background-color: #272727;
-  height: 70vh;
 }
 
 #stats h2 {
@@ -185,4 +177,21 @@ section#stats {
 
 #percent p:nth-of-type(4) {
   border-color: rgb(240, 178, 10);
+}
+
+/* ---------- MEDIA QUERIES ----------- */
+
+@media (min-width: 800px) {
+  #objectif-items {
+    margin: 0 8rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  #objectif-items {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
