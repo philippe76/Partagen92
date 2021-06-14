@@ -13,6 +13,10 @@ body {
   padding: 1.3em;
 }
 
+p {
+  font-size: clamp(1rem, 1.2vw, 2rem);
+}
+
 /*----------- HEADER ------------ */
 
 header {
@@ -142,23 +146,25 @@ section#stats {
 
 #stats p {
   color: grey;
-  width: 70%;
-  margin: 0 auto;
+  margin: 1.8em auto;
   font-size: 1.1em;
+  width: 80%;
 }
 
 #stats #percent {
   width: 70%;
-  margin: 1em auto;
-  column-count: 4;
+  margin: 2em auto;
   text-align: center;
   color: whitesmoke;
   font-size: 1.3em;
   letter-spacing: 0.1em;
 }
 
+#percent h4 {
+  margin-top: 0;
+}
+
 #percent p {
-  break-after: column;
   border-radius: 50%;
   width: 5em;
   height: 5em;
@@ -188,10 +194,22 @@ section#stats {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 3rem;
   }
+
+  #stats #percent {
+    column-count: 2;
+  }
 }
 
 @media (min-width: 1300px) {
   #objectif-items {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  #stats #percent {
+    column-count: 4;
+  }
+
+  #percent p {
+    break-after: column;
   }
 }
