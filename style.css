@@ -3,6 +3,7 @@ body {
   margin: 0;
   color: rgb(68, 66, 66);
   font-size: clamp(1rem, 1.1vw, 2rem);
+  overflow-x: hidden;
 }
 
 .big-title {
@@ -20,6 +21,7 @@ body {
 
 section {
   padding: 1.5em;
+  width: 100%;
 }
 
 /*----------- HEADER ------------ */
@@ -145,8 +147,12 @@ section#stats {
 #stats p {
   color: hsl(0, 1%, 40%);
   margin: 0 auto 3.5rem;
-  width: 80%;
   font-size: clamp(1.1rem, 1vw, 2rem);
+}
+
+#stats > p {
+  padding: 0 2rem;
+  text-align: justify;
 }
 
 #stats #percent {
