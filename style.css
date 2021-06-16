@@ -2,6 +2,7 @@ body {
   background-color: whitesmoke;
   margin: 0;
   color: rgb(68, 66, 66);
+  font-size: clamp(1rem, 1.1vw, 2rem);
 }
 
 .big-title {
@@ -9,12 +10,16 @@ body {
   font-weight: 900;
   letter-spacing: 0.05em;
   text-align: center;
-  margin-top: 0;
+  margin: 0;
   padding: 1.3em;
 }
 
-p {
-  font-size: clamp(1rem, 1.2vw, 2rem);
+.white-font {
+  color: whitesmoke;
+}
+
+section {
+  padding: 1.5em;
 }
 
 /*----------- HEADER ------------ */
@@ -35,7 +40,7 @@ header {
 header ul li {
   display: inline;
   margin: 5vw;
-  font-size: clamp(1rem, 1.2vw, 2rem);
+  font-size: clamp(1.2rem, 1.2vw, 2rem);
 }
 
 /*----------- BANDEAU PARTAGEN ------------ */
@@ -48,7 +53,6 @@ header ul li {
   align-items: center;
   justify-content: center;
   background-color: rgb(172, 112, 84);
-  color: whitesmoke;
   text-shadow: 0px 0px 5px rgb(71, 71, 71);
 }
 
@@ -83,7 +87,6 @@ button#donner {
 #objectif-items p {
   width: 80%;
   margin: 0 auto;
-  color: grey;
 }
 
 #objectif-items div {
@@ -139,16 +142,11 @@ section#stats {
   background-color: #272727;
 }
 
-#stats h2 {
-  color: whitesmoke;
-  padding-top: 1.7em;
-}
-
 #stats p {
-  color: grey;
-  margin: 1.8em auto;
-  font-size: 1.1em;
+  color: hsl(0, 1%, 40%);
+  margin: 0 auto 3.5rem;
   width: 80%;
+  font-size: clamp(1.1rem, 1vw, 2rem);
 }
 
 #stats #percent {
