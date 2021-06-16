@@ -151,8 +151,8 @@ section#stats {
 }
 
 #stats > p {
-  padding: 0 2rem;
   text-align: justify;
+  width: 80%;
 }
 
 #stats #percent {
@@ -187,6 +187,25 @@ section#stats {
 
 #percent p:nth-of-type(4) {
   border-color: rgb(240, 178, 10);
+}
+
+/*----------- NEWS ------------ */
+
+section#news {
+  height: 200px;
+}
+
+/*----------- FOOTER ------------ */
+
+footer {
+  background-color: #272727;
+  color: hsl(0, 1%, 45%);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer i {
+  margin-right: 0.8rem;
 }
 
 /* ---------- MEDIA QUERIES ----------- */
