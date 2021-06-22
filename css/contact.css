@@ -2,6 +2,44 @@ a[href*="contact"] {
   color: #d87639;
 }
 
+body {
+  margin: 0;
+  background: url("../images/baniere.jpg") no-repeat center / cover;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0);
+  font-size: clamp(1rem, 1.1vw, 2rem);
+}
+
 #main-form {
-  margin-top: 10rem;
+  height: 75vh;
+  padding-top: 15rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+#main-form form {
+  width: 60vw;
+  height: 50vh;
+  margin: 2rem;
+  padding: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgb(214, 212, 212);
+  color: whitesmoke;
+}
+
+form input,
+form textarea {
+  width: 40%;
+  padding: 0.8rem;
+  margin-bottom: 2rem;
+  border-radius: 3px;
+  border: 0;
+}
+
+textarea {
+  font-size: clamp(1rem, 0.7vw, 2rem);
+}
+
+[type="submit"] {
+  color: rgb(109, 108, 108);
 }
