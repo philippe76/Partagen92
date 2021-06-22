@@ -1,0 +1,7 @@
+a[href*="contact"] {
+  color: #d87639;
+}
+
+#main-form {
+  margin-top: 10rem;
+}
