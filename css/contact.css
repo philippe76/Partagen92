@@ -5,15 +5,18 @@ a[href*="contact"] {
 body {
   margin: 0;
   background: url("../images/baniere.jpg") no-repeat center / cover;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
   font-size: clamp(1rem, 1.1vw, 2rem);
-  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 #main-form {
-  margin: 15rem 10rem 0;
-  display: flex;
-  padding: 2.5rem;
+  /* margin: 15rem 10rem 0; */
+  /* display: flex; */
+  flex: 1 0 auto;
+  padding: 3rem;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   box-shadow: 0px 0px 10px #000;
@@ -21,9 +24,9 @@ body {
   color: whitesmoke;
 }
 
-#main-form form {
+/* #main-form form {
   width: 50%;
-}
+} */
 
 form input[type="text"],
 textarea {
@@ -85,21 +88,60 @@ form input[type="submit"]:active {
 
 .mail-info {
   width: 50%;
+  margin-bottom: 7rem;
   padding: 0 3rem;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: clamp(1rem, 1.4vw, 2rem);
+  text-shadow: 1px 1px 2px hsl(5, 57%, 20%);
 }
 
 .mail-info h2 {
   text-decoration: underline hsl(5, 57%, 35%) 3px;
   text-underline-offset: 0.4rem;
+  text-shadow: 1px 1px 2px hsl(5, 57%, 20%);
 }
 
 .mail-info a {
   text-decoration: none;
-  color: hsl(5, 57%, 40%);
-  text-shadow: 0px 0px 2px rgb(54, 54, 54);
+  color: white;
+  text-shadow: 1px 1px 2px hsl(5, 57%, 20%);
   font-size: clamp(1rem, 1.5vw, 2rem);
-  font-weight: 800;
-  cursor: url("../images/plane.png");
+  font-weight: 700;
+}
+
+/*----------- FOOTER ------------ */
+
+footer {
+  color: white;
+  text-shadow: 0px 0px 2px hsl(0, 1%, 15%);
+  flex-shrink: 0;
+  margin-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer i {
+  margin-right: 0.8rem;
+}
+
+/* ---------- MEDIA QUERIES ----------- */
+
+@media (min-width: 800px) {
+  #main-form {
+    display: flex;
+    margin: 13rem 10rem 0;
+  }
+
+  #main-form form {
+    width: 50%;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
