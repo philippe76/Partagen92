@@ -7,42 +7,99 @@ body {
   background: url("../images/baniere.jpg") no-repeat center / cover;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0);
   font-size: clamp(1rem, 1.1vw, 2rem);
+  height: 75vh;
 }
 
 #main-form {
-  height: 75vh;
-  padding-top: 15rem;
-
+  margin: 15rem 10rem 0;
   display: flex;
-  justify-content: center;
-}
-
-#main-form form {
-  width: 60vw;
-  height: 50vh;
-  margin: 2rem;
   padding: 2.5rem;
   background-color: rgba(0, 0, 0, 0.4);
-  /* border: 2px solid rgb(214, 212, 212); */
   border-radius: 10px;
   box-shadow: 0px 0px 10px #000;
   box-shadow: 0px 0px 5px #fff;
   color: whitesmoke;
 }
 
-form input,
-form textarea {
-  width: 40%;
+#main-form form {
+  width: 50%;
+}
+
+form input[type="text"],
+textarea {
+  outline: none;
   padding: 0.8rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   border-radius: 3px;
   border: 0;
 }
 
-textarea {
-  font-size: clamp(1rem, 0.7vw, 2rem);
+form input[type="text"] {
+  width: 85%;
+  padding: 1.3rem;
 }
 
-[type="submit"] {
-  color: rgb(109, 108, 108);
+textarea {
+  font-size: clamp(1rem, 0.7vw, 2rem);
+  resize: none;
+  max-width: 88%;
+}
+
+form input[type="submit"] {
+  margin: 0 auto;
+  display: block;
+  border: none;
+  box-shadow: inset 0px 1px 0px 0px #9c2e24;
+  background: linear-gradient(
+    to bottom,
+    hsl(5, 56%, 52%) 5%,
+    hsl(5, 57%, 30%) 100%
+  );
+  background-color: hsl(5, 56%, 52%);
+  border-radius: 6px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: clamp(1rem, 0.5vw, 2rem);
+  padding: 0.8rem 3rem;
+  text-shadow: 0px 1px 0px #b23e35;
+}
+
+form input[type="submit"]:hover {
+  background: linear-gradient(
+    to bottom,
+    hsl(5, 57%, 30%) 5%,
+    hsl(5, 56%, 52%) 100%
+  );
+  background-color: hsl(5, 57%, 30%);
+}
+
+form input[type="submit"]:active {
+  position: relative;
+  top: 1px;
+}
+
+::placeholder {
+  font-size: clamp(1rem, 0.9vw, 2rem);
+  color: rgb(153, 149, 149);
+}
+
+.mail-info {
+  width: 50%;
+  padding: 0 3rem;
+  text-align: center;
+  font-size: clamp(1rem, 1.4vw, 2rem);
+}
+
+.mail-info h2 {
+  text-decoration: underline hsl(5, 57%, 35%) 3px;
+  text-underline-offset: 0.4rem;
+}
+
+.mail-info a {
+  text-decoration: none;
+  color: hsl(5, 57%, 40%);
+  text-shadow: 0px 0px 2px rgb(54, 54, 54);
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  font-weight: 800;
+  cursor: url("../images/plane.png");
 }
