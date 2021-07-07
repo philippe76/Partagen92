@@ -26,18 +26,19 @@
 
     <main id="main-form">
 
-        <form  method="post" action="form.php" > 
+        <!-- <form  method="post" action="form.php" >  -->
+        <form  method="POST" action="http://localhost/formData/form.php" > 
  
         <!-- <form  method="post" action="https://formsubmit.co/0282df5d11b28f534fdfb40ad17aceb1" > -->
 
             <div id="form-name">
 
                 <div class="">
-                    <input type="text" name="last-name" id="last-name" placeholder="Nom">
+                    <input type="text" name="last-name" placeholder="Nom">
                     <!-- <label for="last-name"></label> -->
                 </div> 
                 <div class="">
-                    <input type="text" name="first-name" id="first-name" placeholder="Prénom">
+                    <input type="text" name="first-name" placeholder="Prénom">
                     <!-- <label for="first-name"></label> -->
                 </div>
 
@@ -46,7 +47,7 @@
             <div id="form-mail">
 
                 <div class="">
-                    <input type="text" name="mail" id="mail" placeholder="E-mail">
+                    <input type="text" name="mail"  placeholder="E-mail">
                     <!-- <label for="mail"></label> -->
                 </div>
             </div>
@@ -54,11 +55,11 @@
             <div id="form-comment">
 
                 <div class="">
-                    <textarea type="text" name="comment" id="comment" placeholder="Commentaire"></textarea>
+                    <textarea name="commentaire" placeholder="Commentaire"></textarea>
                 </div>
             </div>
     
-            <input type="submit">
+            <input type="submit" name="submit">
     
         </form>
 
